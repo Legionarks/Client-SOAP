@@ -77,7 +77,6 @@ def getAll():
 
 @app.route('/form', methods=['POST'])
 def submit():    
-    result = ""
     json_data = request.get_json(force = True)
     
     client.service.submit(json_data)
